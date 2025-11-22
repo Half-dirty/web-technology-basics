@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Contrust — Собрать ланч</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lunch.css">
+    <link rel="stylesheet" href="http_form.css">
+</head>
+
+<body>
+    <header>
+        <div class="container top">
+            <h1>Собрать ланч</h1>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">О нас</a></li>
+                    <li><a href="lunch.html" aria-current="page">Собрать ланч</a></li>
+                    <li><a href="#">Заказы</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="menu-section" id="soups">
+                <h2>Супы</h2>
+
+                <div class="menu-grid">
+                    <div class="dish-card">
+                        <img src="images/soup-tomato.jpg" alt="Сливочный томатный суп">
+                        <p class="dish-card__name">Сливочный томатный суп</p>
+                        <p class="dish-card__weight">350 мл</p>
+                        <p class="dish-card__price">320 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+
+                    <div class="dish-card">
+                        <img src="images/soup-chicken.jpg" alt="Куриный суп с домашней лапшой">
+                        <p class="dish-card__name">Куриный суп с домашней лапшой</p>
+                        <p class="dish-card__weight">400 мл</p>
+                        <p class="dish-card__price">290 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+
+                    <div class="dish-card">
+                        <img src="images/soup-pumpkin.jpg" alt="Тыквенный крем-суп с семечками">
+                        <p class="dish-card__name">Тыквенный крем-суп с семечками</p>
+                        <p class="dish-card__weight">330 мл</p>
+                        <p class="dish-card__price">340 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section" id="mains">
+                <h2>Главные блюда</h2>
+
+                <div class="menu-grid">
+                    <div class="dish-card">
+                        <img src="images/main-chicken.jpg" alt="Куриное филе с овощами гриль">
+                        <p class="dish-card__name">Куриное филе с овощами гриль</p>
+                        <p class="dish-card__weight">250 г</p>
+                        <p class="dish-card__price">420 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+
+                    <div class="dish-card">
+                        <img src="images/main-pasta.jpg" alt="Паста с томатным соусом и моцареллой">
+                        <p class="dish-card__name">
+                            Паста с томатным соусом и моцареллой
+                        </p>
+                        <p class="dish-card__weight">280 г</p>
+                        <p class="dish-card__price">410 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+
+                    <div class="dish-card">
+                        <img src="images/main-fish.jpg" alt="Запечённое филе лосося с лимоном и травами">
+                        <p class="dish-card__name">
+                            Запечённое филе лосося с лимоном и свежими травами
+                        </p>
+                        <p class="dish-card__weight">230 г</p>
+                        <p class="dish-card__price">540 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+                </div>
+            </section>
+            <section class="menu-section" id="drinks">
+                <h2>Напитки</h2>
+
+                <div class="menu-grid">
+                    <div class="dish-card">
+                        <img src="images/drink-mors.jpg" alt="Домашний морс из ягод">
+                        <p class="dish-card__name">Домашний морс из ягод</p>
+                        <p class="dish-card__weight">300 мл</p>
+                        <p class="dish-card__price">180 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+
+                    <div class="dish-card">
+                        <img src="images/drink-lemonade.jpg" alt="Лимонад с мятой и лаймом">
+                        <p class="dish-card__name">Лимонад с мятой и лаймом</p>
+                        <p class="dish-card__weight">300 мл</p>
+                        <p class="dish-card__price">190 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+
+                    <div class="dish-card">
+                        <img src="images/drink-latte.jpg" alt="Латте на альтернативном молоке">
+                        <p class="dish-card__name">Латте на альтернативном молоке</p>
+                        <p class="dish-card__weight">250 мл</p>
+                        <p class="dish-card__price">230 ₽</p>
+                        <button class="dish-card__button" type="button">Добавить</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="order" id="order">
+        <div class="container">
+            <h2 class="order__title">Сделать заказ</h2>
+
+            <form class="order-form" action="https://httpbin.org/post" method="post">
+                <div class="order-form__column order-form__column--choices">
+                    <h3 class="order-form__subtitle">Ваш заказ</h3>
+
+                    <div class="order-form__field">
+                        <label for="soup">Суп</label>
+                        <select id="soup" name="soup" required>
+                            <option value="" selected disabled>Выберите суп</option>
+                            <option value="tomato_cream">Сливочный томатный суп</option>
+                            <option value="chicken_noodle">Куриный суп с домашней лапшой</option>
+                            <option value="pumpkin_cream">Тыквенный крем-суп с семечками</option>
+                        </select>
+                    </div>
+
+                    <div class="order-form__field">
+                        <label for="main-course">Главное блюдо</label>
+                        <select id="main-course" name="main_course" required>
+                            <option value="" selected disabled>Выберите главное блюдо</option>
+                            <option value="chicken_veggies">Куриное филе с овощами гриль</option>
+                            <option value="pasta_mozzarella">Паста с томатным соусом и моцареллой</option>
+                            <option value="salmon_fillets">Запечённое филе лосося</option>
+                        </select>
+                    </div>
+
+                    <div class="order-form__field">
+                        <label for="drink">Напиток</label>
+                        <select id="drink" name="drink" required>
+                            <option value="" selected disabled>Выберите напиток</option>
+                            <option value="berry_mors">Домашний морс из ягод</option>
+                            <option value="mint_lemonade">Лимонад с мятой и лаймом</option>
+                            <option value="latte_alt_milk">Латте на альтернативном молоке</option>
+                        </select>
+                    </div>
+
+                    <div class="order-form__field">
+                        <label for="comment">Комментарий к заказу</label>
+                        <textarea id="comment" name="comment" rows="4"
+                            placeholder="Например, 'без лука' или 'звонить за 10 минут до доставки'"></textarea>
+                    </div>
+                </div>
+
+                <div class="order-form__column order-form__column--client">
+                    <h3 class="order-form__subtitle">Ваши данные</h3>
+
+                    <div class="order-form__field">
+                        <label for="client-name">Имя</label>
+                        <input type="text" id="client-name" name="client_name" required>
+                    </div>
+
+                    <div class="order-form__field">
+                        <label for="client-email">Email</label>
+                        <input type="email" id="client-email" name="client_email" required>
+                    </div>
+
+                    <div class="order-form__checkbox">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
+                        <label for="subscribe">Получать информацию о скидках и акциях</label>
+                    </div>
+
+                    <div class="order-form__field">
+                        <label for="client-phone">Телефон</label>
+                        <input type="tel" id="client-phone" name="client_phone" required>
+                    </div>
+
+                    <div class="order-form__field">
+                        <label for="client-address">Адрес доставки</label>
+                        <input type="text" id="client-address" name="client_address" required>
+                        <span><i>Доставка осуществляется только по Москве</i></span>
+                    </div>
+
+                    <div class="order-form__field">
+                        <span class="order-form__field-title">Время доставки</span>
+                        <div class="order-form__radio-group">
+                            <div class="order-form__radio-option">
+                                <input type="radio" id="delivery-asap" name="delivery_option" value="asap" required>
+                                <label for="delivery-asap">Как можно скорее</label>
+                            </div>
+                            <div class="order-form__radio-option">
+                                <input type="radio" id="delivery-by-time" name="delivery_option" value="by_time">
+                                <label for="delivery-by-time">Ко времени (укажите ниже)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-form__field">
+                        <label for="delivery-time">Желаемое время доставки</label>
+                        <input
+                            type="time"
+                            id="delivery-time"
+                            name="delivery_time"
+                            min="07:00"
+                            max="23:00"
+                            step="300">
+                        <span><i>Доступное время доставки с 7:00 до 23:00</i></span>
+                    </div>
+
+                    <div class="order-form__buttons">
+                        <button class="order-form__button order-form__button--secondary" type="reset">
+                            Сбросить
+                        </button>
+                        <button class="order-form__button order-form__button--primary" type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <div class="container">
+            <p><strong>Контакты</strong></p>
+            <p>
+                Тел.: <a href="tel:+79991296433">+7 (999) 129-64-33</a>
+                Email: <a href="mailto:example@gmail.com">example@gmail.com</a><br>
+                Москва, ул. Примерная, 23
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

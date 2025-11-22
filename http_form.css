@@ -1,0 +1,160 @@
+.order {
+  margin-bottom: 60px;
+}
+
+.order__title {
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.order-form {
+  display: flex;
+  gap: 32px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--color-bg-elevated);
+  box-shadow: 0 0 0 1px var(--color-border);
+}
+
+.order-form__column {
+  flex: 1;
+}
+
+.order-form__subtitle {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.order-form__field {
+  margin-bottom: 16px;
+}
+
+.order-form__field-title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.order-form__field span {
+    font-size: 14px;
+}
+
+.order-form select,
+.order-form input[type="text"],
+.order-form input[type="email"],
+.order-form input[type="tel"],
+.order-form input[type="time"],
+.order-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-soft);
+  font: inherit;
+  color: var(--color-text);
+}
+
+.order-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.order-form__checkbox {
+  margin: 8px 0 16px;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.order-form__checkbox input {
+  margin-right: 8px;
+}
+
+.order-form__checkbox label {
+  display: inline; 
+}
+
+.order-form__radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-form__radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+label[for="delivery-asap"], label[for="delivery-by-time"] {
+  margin-bottom: 0;
+}
+
+.order-form__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.order-form__button {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+.order-form__button--primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.order-form__button--secondary {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.order-form__button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 900px) {
+  .order-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .order__title {
+    text-align: center;
+  }
+
+  .order-form {
+    padding: 16px;
+  }
+
+  .order-form__buttons {
+    justify-content: center;
+  }
+}
