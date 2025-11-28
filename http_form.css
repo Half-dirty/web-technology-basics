@@ -7,6 +7,8 @@
   font-size: 24px;
   font-weight: 700;
   color: var(--color-text);
+  display: flex;
+  justify-content: center;
 }
 
 .order-form {
@@ -49,7 +51,7 @@
 }
 
 .order-form__field span {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .order-form select,
@@ -83,7 +85,7 @@
 }
 
 .order-form__checkbox label {
-  display: inline; 
+  display: inline;
 }
 
 .order-form__radio-group {
@@ -100,7 +102,8 @@
   color: var(--color-text);
 }
 
-label[for="delivery-asap"], label[for="delivery-by-time"] {
+label[for="delivery-asap"],
+label[for="delivery-by-time"] {
   margin-bottom: 0;
 }
 
@@ -156,4 +159,47 @@ label[for="delivery-asap"], label[for="delivery-by-time"] {
   .order-form__buttons {
     justify-content: center;
   }
+}
+
+.order-summary {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background-color: var(--color-bg-soft);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.order-summary__empty {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.order-summary__categories {
+  display: grid;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.order-summary__category-title {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.order-summary__text {
+  margin: 0;
+}
+
+.order-summary__text--empty {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.order-summary__total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border);
+  font-weight: 600;
 }

@@ -129,8 +129,8 @@ nav a[aria-current="page"] {
 }
 
 main {
-  margin: 0;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  padding: 0;
 }
 
 section {
@@ -261,5 +261,4 @@ footer p {
     font-size: 10px;
   }
 }
-
 

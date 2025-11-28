@@ -33,95 +33,17 @@
         <div class="container">
             <section class="menu-section" id="soups">
                 <h2>Супы</h2>
-
-                <div class="menu-grid">
-                    <div class="dish-card">
-                        <img src="images/soup-tomato.jpg" alt="Сливочный томатный суп">
-                        <p class="dish-card__name">Сливочный томатный суп</p>
-                        <p class="dish-card__weight">350 мл</p>
-                        <p class="dish-card__price">320 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="images/soup-chicken.jpg" alt="Куриный суп с домашней лапшой">
-                        <p class="dish-card__name">Куриный суп с домашней лапшой</p>
-                        <p class="dish-card__weight">400 мл</p>
-                        <p class="dish-card__price">290 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="images/soup-pumpkin.jpg" alt="Тыквенный крем-суп с семечками">
-                        <p class="dish-card__name">Тыквенный крем-суп с семечками</p>
-                        <p class="dish-card__weight">330 мл</p>
-                        <p class="dish-card__price">340 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-                </div>
+                <div class="menu-grid"></div>
             </section>
 
             <section class="menu-section" id="mains">
                 <h2>Главные блюда</h2>
-
-                <div class="menu-grid">
-                    <div class="dish-card">
-                        <img src="images/main-chicken.jpg" alt="Куриное филе с овощами гриль">
-                        <p class="dish-card__name">Куриное филе с овощами гриль</p>
-                        <p class="dish-card__weight">250 г</p>
-                        <p class="dish-card__price">420 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="images/main-pasta.jpg" alt="Паста с томатным соусом и моцареллой">
-                        <p class="dish-card__name">
-                            Паста с томатным соусом и моцареллой
-                        </p>
-                        <p class="dish-card__weight">280 г</p>
-                        <p class="dish-card__price">410 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="images/main-fish.jpg" alt="Запечённое филе лосося с лимоном и травами">
-                        <p class="dish-card__name">
-                            Запечённое филе лосося с лимоном и свежими травами
-                        </p>
-                        <p class="dish-card__weight">230 г</p>
-                        <p class="dish-card__price">540 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-                </div>
+                <div class="menu-grid"></div>
             </section>
+
             <section class="menu-section" id="drinks">
                 <h2>Напитки</h2>
-
-                <div class="menu-grid">
-                    <div class="dish-card">
-                        <img src="images/drink-mors.jpg" alt="Домашний морс из ягод">
-                        <p class="dish-card__name">Домашний морс из ягод</p>
-                        <p class="dish-card__weight">300 мл</p>
-                        <p class="dish-card__price">180 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="images/drink-lemonade.jpg" alt="Лимонад с мятой и лаймом">
-                        <p class="dish-card__name">Лимонад с мятой и лаймом</p>
-                        <p class="dish-card__weight">300 мл</p>
-                        <p class="dish-card__price">190 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-
-                    <div class="dish-card">
-                        <img src="images/drink-latte.jpg" alt="Латте на альтернативном молоке">
-                        <p class="dish-card__name">Латте на альтернативном молоке</p>
-                        <p class="dish-card__weight">250 мл</p>
-                        <p class="dish-card__price">230 ₽</p>
-                        <button class="dish-card__button" type="button">Добавить</button>
-                    </div>
-                </div>
+                <div class="menu-grid"></div>
             </section>
         </div>
     </main>
@@ -134,34 +56,38 @@
                 <div class="order-form__column">
                     <h3 class="order-form__subtitle">Ваш заказ</h3>
 
-                    <div class="order-form__field">
-                        <label for="soup">Суп</label>
-                        <select id="soup" name="soup" required>
-                            <option value="" selected disabled>Выберите суп</option>
-                            <option value="tomato_cream">Сливочный томатный суп</option>
-                            <option value="chicken_noodle">Куриный суп с домашней лапшой</option>
-                            <option value="pumpkin_cream">Тыквенный крем-суп с семечками</option>
-                        </select>
-                    </div>
+                    <div class="order-summary">
+                        <p id="order-empty" class="order-summary__empty">
+                            Ничего не выбрано
+                        </p>
 
-                    <div class="order-form__field">
-                        <label for="main-course">Главное блюдо</label>
-                        <select id="main-course" name="main_course" required>
-                            <option value="" selected disabled>Выберите главное блюдо</option>
-                            <option value="chicken_veggies">Куриное филе с овощами гриль</option>
-                            <option value="pasta_mozzarella">Паста с томатным соусом и моцареллой</option>
-                            <option value="salmon_fillets">Запечённое филе лосося</option>
-                        </select>
-                    </div>
+                        <div id="order-categories" class="order-summary__categories" hidden>
+                            <div class="order-summary__category" data-category="soup">
+                                <h4 class="order-summary__category-title">Суп</h4>
+                                <p class="order-summary__text order-summary__text--empty">
+                                    Блюдо не выбрано
+                                </p>
+                            </div>
 
-                    <div class="order-form__field">
-                        <label for="drink">Напиток</label>
-                        <select id="drink" name="drink" required>
-                            <option value="" selected disabled>Выберите напиток</option>
-                            <option value="berry_mors">Домашний морс из ягод</option>
-                            <option value="mint_lemonade">Лимонад с мятой и лаймом</option>
-                            <option value="latte_alt_milk">Латте на альтернативном молоке</option>
-                        </select>
+                            <div class="order-summary__category" data-category="main">
+                                <h4 class="order-summary__category-title">Главное блюдо</h4>
+                                <p class="order-summary__text order-summary__text--empty">
+                                    Блюдо не выбрано
+                                </p>
+                            </div>
+
+                            <div class="order-summary__category" data-category="drink">
+                                <h4 class="order-summary__category-title">Напиток</h4>
+                                <p class="order-summary__text order-summary__text--empty">
+                                    Напиток не выбран
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="order-total" class="order-summary__total" hidden>
+                            <span>Стоимость заказа:</span>
+                            <span id="order-total-value">0 ₽</span>
+                        </div>
                     </div>
 
                     <div class="order-form__field">
@@ -216,13 +142,7 @@
 
                     <div class="order-form__field">
                         <label for="delivery-time">Желаемое время доставки</label>
-                        <input
-                            type="time"
-                            id="delivery-time"
-                            name="delivery_time"
-                            min="07:00"
-                            max="23:00"
-                            step="300">
+                        <input type="time" id="delivery-time" name="delivery_time" min="07:00" max="23:00" step="300">
                         <span><i>Доступное время доставки с 7:00 до 23:00</i></span>
                     </div>
 
@@ -249,6 +169,9 @@
             </p>
         </div>
     </footer>
+
+    <script src="dishes.js"></script>
+    <script src="lunch-page.js"></script>
 </body>
 
 </html>
