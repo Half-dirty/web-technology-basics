@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Tasks Test</title>
+</head>
+<body>
+  <h1>JS тесты</h1>
+  <p>Консоль браузера.</p>
+  <script src="Minimum digit Кузнецов Никита 241-326.js"></script>
+  <script src="Pluralization Кузнецов Никита 241-326.js"></script>
+  <script src="Sorting objects Кузнецов Никита 241-326.js"></script>
+  <script src="Caesar's cipher Кузнецов Никита 241-326.js"></script>
+  <script src="Exponentiation Кузнецов Никита 241-326.js"></script>
+  <script src="Fibonacci numbers Кузнецов Никита 241-326.js"></script>
+  <script src="Greatest common divisor Кузнецов Никита 241-326.js"></script>
+  <script>
+    console.log("minDigit");
+    console.log("minDigit(5029) =", minDigit(5029));       
+    console.log("minDigit(7)    =", minDigit(7));       
+
+    console.log("pluralizeRecords");
+    console.log(pluralizeRecords(1));
+    console.log(pluralizeRecords(2));
+    console.log(pluralizeRecords(5));
+    console.log(pluralizeRecords(11));
+    console.log(pluralizeRecords(21));
+
+    console.log("getSortedArray");
+    const users = [
+      { name: "Петя", age: 30 },
+      { name: "Аня", age: 20 },
+      { name: "Саша", age: 25 },
+    ];
+    console.log("by age:", getSortedArray(users, "age"));
+    console.log("by name:", getSortedArray(users, "name"));
+
+    console.log("cesar");
+    const enc = cesar("хакуна матата", 8, "encode");
+    console.log("encode:", enc);
+    console.log("decode:", cesar(enc, 8, "decode"));
+
+    console.log("pow");
+    console.log("pow(2, 10) =", pow(2, 10));
+    console.log("pow(5, 3)  =", pow(5, 3));
+
+    console.log("fibb");
+    console.log("fibb(0) =", fibb(0).toString());
+    console.log("fibb(1) =", fibb(1).toString());
+    console.log("fibb(10) =", fibb(10).toString());
+
+    console.log("gcd");
+    console.log("gcd(24, 18) =", gcd(24, 18));    
+    console.log("gcd(17, 5)  =", gcd(17, 5));     
+  </script>
+</body>
+</html>
