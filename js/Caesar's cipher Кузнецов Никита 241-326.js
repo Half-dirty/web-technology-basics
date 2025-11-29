@@ -1,8 +1,8 @@
 function cesar(str, shift, action) {
-  var lowerAlphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
-  var upperAlphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
-  var alphabetLength = lowerAlphabet.length;
-  var s = shift % alphabetLength;
+  const lowerAlphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+  const upperAlphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+  const alphabetLength = lowerAlphabet.length;
+  let s = shift % alphabetLength;
   if (s < 0) {
     s = s + alphabetLength;
   }
@@ -11,12 +11,12 @@ function cesar(str, shift, action) {
   } else if (action !== "encode") {
     throw new Error("action должно быть 'encode' или 'decode'");
   }
-  var result = "";
-  for (var i = 0; i < str.length; i++) {
-    var ch = str[i];
-    var index = -1;
-    var isUpper = false;
-    for (var j = 0; j < alphabetLength; j++) {
+  let result = "";
+  for (let i = 0; i < str.length; i++) {
+    const ch = str[i];
+    let index = -1;
+    let isUpper = false;
+    for (let j = 0; j < alphabetLength; j++) {
       if (lowerAlphabet[j] === ch) {
         index = j;
         isUpper = false;
@@ -31,7 +31,7 @@ function cesar(str, shift, action) {
     if (index === -1) {
       result += ch;
     } else {
-      var newIndex = (index + s) % alphabetLength;
+      const newIndex = (index + s) % alphabetLength;
       if (isUpper) {
         result += upperAlphabet[newIndex];
       } else {
@@ -42,5 +42,5 @@ function cesar(str, shift, action) {
   return result;
 }
 
-// var dec = cesar("эзтыхз фзъзъз", 8, "decode"); -> "хакуна матата"
+// const dec = cesar("эзтыхз фзъзъз", 8, "decode"); -> "хакуна матата"
 // Расшифрованное сообщение: "хакуна матата"
